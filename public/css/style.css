@@ -1,0 +1,258 @@
+@import url('https://fonts.googleapis.com/css2?family=Piazzolla:ital,opsz,wght@0,8..30,200;0,8..30,300;1,8..30,800&display=swap');
+
+/* Home Section Css Start */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Piazzolla', serif;
+}
+
+:root {
+    --main-bg: #1e272e;
+    --main-color: red;
+}
+
+html {
+    font-size: 62.5%;
+}
+
+.row {
+    margin: 0;
+}
+
+body {
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+}
+
+/* Navbar Start */
+
+.main_menu {
+    background-color: var(--main-bg);
+}
+
+.navbar {
+    color: #fff;
+    padding: 1rem;
+}
+
+.navbar a {
+    color: #fff;
+    font-size: 1.6rem;
+    margin-left: 2rem;
+}
+
+.navbar a:hover {
+    color: var(--main-color);
+}
+
+.navbar-toggler {
+    background-color: gray;
+}
+
+.fa-snowflake {
+    transition: all linear;
+    animation: rotate 2s linear infinite;
+    color: var(--main-color);
+}
+
+@keyframes rotate {
+    0% {
+        transform: rotate(0deg);
+    }
+
+    100% {
+        transform: rotate(360deg);
+    }
+}
+
+/* Navbar End */
+/* Header Start */
+
+.main_header_left {
+    height: 51rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+}
+
+.main_header_left p {
+    font-size: 1.6rem;
+    text-transform: capitalize;
+}
+
+.main_header_left h1 {
+    font-size: 2.5rem;
+    text-transform: capitalize;
+}
+
+.main_header_left button {
+    border: none;
+    font-size: 1.2rem;
+    padding: 0.7rem;
+    text-transform: uppercase;
+    border-radius: 2rem;
+    margin-top: 2rem;
+    box-shadow: 0 8px 6px -6px #000;
+    outline: none;
+}
+
+.main_header_left button:hover {
+    box-shadow: 0 8px 6px -6px var(--main-color);
+    color: red;
+}
+
+.main_header_left .aboutme {
+    border: none;
+    font-size: 1.2rem;
+    padding: 0.7rem;
+    text-transform: uppercase;
+    border-radius: 2rem;
+    margin-top: 2rem;
+    box-shadow: 0 8px 6px -6px #000;
+    outline: none;
+    color: #ff0000;
+}
+
+.main_header_left .aboutme:hover {
+    box-shadow: 0 8px 6px -6px var(--main-color);
+    text-decoration: none;
+}
+
+span {
+    color: var(--main-color);
+}
+
+.main_header_right {
+    height: 51rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-end;
+    filter: drop-shadow(0 0.5rem 1rem rgba(0, 0, 0, 0.3));
+}
+
+/* Header End */
+/* Footer Section Start */
+
+footer {
+    width: 100%;
+    background-color: var(--main-bg);
+    margin-top: auto;
+    padding: 1.4rem;
+}
+
+footer p {
+    margin: 0;
+    color: #fff;
+    text-align: center;
+    font-size: 1.1rem;
+    text-transform: capitalize;
+}
+
+footer a {
+    color: #ff0000;
+}
+
+footer a:hover {
+    color: #fff;
+    text-decoration: none;
+}
+
+@media (max-width:993px) {
+    .main_header_left {
+        height: 30rem;
+    }
+
+    .main_header_right {
+        align-items: center;
+        margin-top: -4rem;
+        margin-bottom: 4rem;
+    }
+}
+
+/* Footer Section End */
+/* Home Section Css End */
+
+/* About Section Css Start */
+.main_header_right figure img {
+    filter: drop-shadow(0 0.5rem 1rem rgba(0, 0, 0, 0.3));
+}
+
+/* About Section Css End */
+
+/* Weather Section Css Start */
+.weather_form {
+    width: 60%;
+    position: relative;
+    margin: 5rem auto;
+}
+
+.weather_form input[type="text"] {
+    width: 100%;
+    padding: 2rem 5rem;
+    background: #1e202b;
+    color: #fff;
+    outline: none;
+    border: none;
+    font-size: 1.7rem;
+    border-radius: 3rem;
+}
+
+.weather_form input[type="submit"] {
+    position: absolute;
+    top: 5px;
+    right: 5px;
+    bottom: 5px;
+    border: none;
+    background: red;
+    padding: 0 3rem;
+    border-radius: 3rem;
+    color: #fff;
+    font-size: 1.6rem;
+    cursor: pointer;
+}
+
+.weather_form input[type="submit"]:hover {
+    color: red;
+    background-color: #fff;
+}
+
+.weather_Info {
+    width: 40rem;
+    margin: auto;
+    min-height: 20rem;
+    background-color: #323544;
+    border-radius: 1rem;
+    padding: 1rem;
+    font-family: "Roboto", sans-serif;
+}
+
+.top_layer {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    text-align: center;
+    color: #fff;
+    font-size: 1.3rem;
+}
+
+.botom_layer {
+    color: #fff;
+    justify-content: space-between;
+    font-size: 3rem;
+    align-items: center;
+    text-align: center;
+    margin-top: 1rem;
+}
+
+.temp_layer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    gap: 20px;
+}
